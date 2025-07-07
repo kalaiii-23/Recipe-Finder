@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Recipe Finder</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Finder</h1>
+        <div class="category-buttons">
+            <button class="category-button" data-category="veg">Vegetarian</button>
+            <button class="category-button" data-category="non-veg">Non-Vegetarian</button>
+            <button class="category-button" data-category="vegan">Vegan</button>
+        </div>
+        <input type="text" id="search-input" placeholder="Search for a recipe..." />
+        <button id="search-button">Search</button>
+    </div>
+    <div id="loading" class="loading">Loading...</div>
+    <div id="recipe-list" class="recipe-list">
+        <!-- Dish names will be injected here -->
+    </div>
+    <div id="recipe-display" class="recipe-display">
+        <!-- Recipe details will be injected here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
